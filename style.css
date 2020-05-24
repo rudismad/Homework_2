@@ -94,7 +94,7 @@
 
 .body-ad {
     grid-area: body-ad;
-    text-align: center;
+    width: 100%;
 }
 
 .body-2 {
