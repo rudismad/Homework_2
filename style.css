@@ -1,11 +1,10 @@
 .m-container {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: bisque;
     display: grid;
-    /* grid-template-columns: 150px 25% 20vw; */
-    /* grid-template-columns: repeat(4, 50px 100px 150px); */
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 15vh);
-    /* grid-column-gap: 30px; */
-    /* gap: 5px; */
     grid-template-areas:
         "header"
         "nav"
@@ -14,14 +13,24 @@
         "footer";
 }
 
-.h-container {
+
+.heading-container {
     display: grid;
     border: 1px dashed teal;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+        "heading heading"
         "brand brand"
         "nav tools"
+}
+
+.h-divs-0 {
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 1px solid red;
+    grid-area: heading;
+    /* text-align: center; */
 }
 
 .h-divs-1 {
@@ -44,7 +53,42 @@
 
 }
 
-/* @media (min-width: 576px) {
+.hero-0 {
+    font-size: 1.3em;
+    grid-area: hero-0;
+    border: 1px solid red;
+    /* text-align: center; */
+}
+
+.hero-1 {
+    border: 1px solid red;
+    grid-area: hero-1;
+    text-align: center;
+}
+
+.hero-2 {
+    border: 1px solid red;
+    grid-area: hero-2;
+    text-align: center;
+
+}
+
+
+.hero-container {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: bisque;
+    display: grid;
+    border: 1px dashed teal;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hero-0"
+        "hero-1"
+        "hero-2"
+}
+
+@media (min-width: 576px) {
     .m-container {
         grid-template-columns: 1fr 2fr;
         grid-template-rows: repeat(4, 20vh);
@@ -54,8 +98,8 @@
             "main main"
             "footer footer";
     }
-} */
+}
 
-/* div {
+div {
     border: 1px solid red;
-} */
+}
