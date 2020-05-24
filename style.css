@@ -19,37 +19,38 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "h-divs-0 h-divs-0"
-        "h-divs-1 h-divs-1"
-        "h-divs-2 h-divs-3"
+        "heading-0 heading-0"
+        "heading-1 heading-1"
+        "heading-2 heading-3"
 }
 
-.h-divs-0 {
+.heading-0 {
     font-size: 1.3em;
     font-weight: bold;
-    grid-area: h-divs-0;
+    grid-area: heading-0;
     /* text-align: center; */
 }
 
-.h-divs-1 {
-    grid-area: h-divs-1;
+.heading-1 {
+    grid-area: heading-1;
     text-align: center;
 }
 
-.h-divs-2 {
-    grid-area: h-divs-2;
+.heading-2 {
+    grid-area: heading-2;
     text-align: center;
 
 }
 
-.h-divs-3 {
-    grid-area: h-divs-3;
+.heading-3 {
+    grid-area: heading-3;
     text-align: center;
 
 }
 
 .hero-0 {
     font-size: 1.3em;
+    font-weight: bold;
     grid-area: hero-0;
     /* text-align: center; */
 }
@@ -80,7 +81,7 @@
 }
 
 .body-0 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     grid-area: body-0;
     /* text-align: center; */
@@ -121,12 +122,25 @@ div {
     border: 1px solid red;
 }
 
+.sidebar-0 {
+    grid-area: siber-0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.sidebar-1 {
+    grid-area: siber-1;
+    text-align: center;
+}
+
 footer {
     font-size: 1.3em;
     font-weight: bold;
     border: 1px solid red;
 
 }
+
+/* Phone screen */
 
 @media (max-width: 576px) {
 
@@ -137,22 +151,26 @@ footer {
     .sidebar-container {
         display: none;
     }
-
 }
 
+/* Tablet screen */
 @media (min-width: 576px) {
-    .all-container {
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(5, 20vh);
+
+    .heading-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
-            "heading-container"
-            "hero-container"
-            "body-container"
-            "sidebar-container"
-            "footer";
+            "heading-0 heading-0 heading-0"
+            "heading-1 heading-2 heading-3"
     }
 
-    .sidebar-container {
-        display: none;
+    .body-container {
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "body-0 body-0"
+            "body-1 body-ad"
+            "body-2 body-2"
     }
+
 }
