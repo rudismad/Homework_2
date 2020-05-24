@@ -1,7 +1,4 @@
 .m-container {
-    margin: 10px 0 10px 0;
-    padding: 10px;
-    background-color: bisque;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 15vh);
@@ -15,40 +12,39 @@
 
 
 .heading-container {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: rosybrown;
     display: grid;
     border: 1px dashed teal;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "heading heading"
-        "brand brand"
-        "nav tools"
+        "h-divs-0 h-divs-0"
+        "h-divs-1 h-divs-1"
+        "h-divs-2 h-divs-3"
 }
 
 .h-divs-0 {
     font-size: 1.3em;
     font-weight: bold;
-    border: 1px solid red;
-    grid-area: heading;
+    grid-area: h-divs-0;
     /* text-align: center; */
 }
 
 .h-divs-1 {
-    border: 1px solid red;
-    grid-area: brand;
+    grid-area: h-divs-1;
     text-align: center;
 }
 
 .h-divs-2 {
-    border: 1px solid red;
-    grid-area: nav;
+    grid-area: h-divs-2;
     text-align: center;
 
 }
 
 .h-divs-3 {
-    border: 1px solid red;
-    grid-area: tools;
+    grid-area: h-divs-3;
     text-align: center;
 
 }
@@ -56,23 +52,19 @@
 .hero-0 {
     font-size: 1.3em;
     grid-area: hero-0;
-    border: 1px solid red;
     /* text-align: center; */
 }
 
 .hero-1 {
-    border: 1px solid red;
     grid-area: hero-1;
     text-align: center;
 }
 
 .hero-2 {
-    border: 1px solid red;
     grid-area: hero-2;
     text-align: center;
 
 }
-
 
 .hero-container {
     margin: 10px 0 10px 0;
@@ -88,6 +80,55 @@
         "hero-2"
 }
 
+.body-0 {
+    font-size: 1.5em;
+    font-weight: bold;
+    grid-area: body-0;
+    /* text-align: center; */
+}
+
+.body-1 {
+    grid-area: body-1;
+    text-align: center;
+}
+
+.body-ad {
+    grid-area: body-ad;
+    text-align: center;
+}
+
+.body-2 {
+    grid-area: body-2;
+    text-align: center;
+
+}
+
+.body-container {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    background-color: paleturquoise;
+    display: grid;
+    border: 1px dashed teal;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "body-0"
+        "body-1"
+        "body-ad"
+        "body-2"
+}
+
+div {
+    border: 1px solid red;
+}
+
+footer {
+    font-size: 1.3em;
+    font-weight: bold;
+    border: 1px solid red;
+
+}
+
 @media (min-width: 576px) {
     .m-container {
         grid-template-columns: 1fr 2fr;
@@ -98,8 +139,4 @@
             "main main"
             "footer footer";
     }
-}
-
-div {
-    border: 1px solid red;
 }
