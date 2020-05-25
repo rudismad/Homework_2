@@ -33,27 +33,20 @@
     /* text-align: center; */
 }
 
-/* .heading-1 {
-    grid-area: heading-1;
-    text-align: center;
-    
-} */
-
 .heading-1 {
     grid-area: heading-1;
     text-align: center;
-    background-color: #666666;
+    background-color: #ffffff;
     border-radius: 3px;
-    border: 1px solid #666666;
+    border: 2px solid #666666;
     display: inline-block;
-    color: #ffffff;
+    color: #666666;
     font-size: 13px;
-    padding: 6px 24px;
+    padding: 7px 14px;
 }
 
 .heading-1:hover {
-    background-color: #caebf2;
-
+    background-color: #EFEFEF;
 }
 
 .heading-1:active {
@@ -61,45 +54,41 @@
     top: 1px;
 }
 
-
-
 .heading-2 {
     grid-area: heading-2;
     text-align: center;
-    background-color: #666666;
+    background-color: #ffffff;
     border-radius: 3px;
-    border: 1px solid #666666;
+    border: 2px solid #666666;
     display: inline-block;
-    color: #ffffff;
+    color: #666666;
     font-size: 13px;
-    padding: 6px 24px;
+    padding: 7px 14px;
 }
 
 .heading-2:hover {
-    background-color: #caebf2;
-
+    background-color: #EFEFEF;
 }
 
 .heading-2:active {
     position: relative;
     top: 1px;
-
 }
 
 .heading-3 {
     grid-area: heading-3;
     text-align: center;
-    background-color: #666666;
+    background-color: #ffffff;
     border-radius: 3px;
-    border: 1px solid #666666;
+    border: 2px solid #666666;
     display: inline-block;
-    color: #ffffff;
+    color: #666666;
     font-size: 13px;
-    padding: 6px 24px;
+    padding: 7px 14px;
 }
 
 .heading-3:hover {
-    background-color: #caebf2;
+    background-color: #EFEFEF;
 }
 
 .heading-3:active {
@@ -124,12 +113,11 @@
     font-size: 1.3em;
     font-weight: bold;
     grid-area: hero-0;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .hero-1 {
     grid-area: hero-1;
-    text-align: center;
 }
 
 .hero-2 {
@@ -153,15 +141,15 @@
 }
 
 .body-0 {
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     font-weight: bold;
     grid-area: body-0;
-    /* text-align: center; */
+    text-align: left;
 }
 
 .body-1 {
     grid-area: body-1;
-    text-align: center;
+    text-align: left;
 }
 
 .body-ad {
@@ -171,19 +159,19 @@
 
 .body-2 {
     grid-area: body-2;
-    text-align: center;
+    text-align: left;
 
 }
 
 .sidebar-0 {
-    grid-area: siber-0;
+    grid-area: sidebar-0;
     font-size: 1.3em;
     font-weight: bold;
 }
 
 .sidebar-1 {
-    grid-area: siber-1;
-    text-align: center;
+    grid-area: sidebar-1;
+    text-align: left;
 }
 
 .foot {
@@ -219,7 +207,7 @@
 
     .body-container {
         grid-template-columns: 3fr 1fr;
-        grid-template-rows: 1fr 1fr 2fr;
+        grid-template-rows: 1fr 2fr 3fr;
         grid-template-areas:
             "body-0 body-0"
             "body-1 body-ad"
