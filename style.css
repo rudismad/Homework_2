@@ -9,7 +9,7 @@
         "heading-container"
         "hero-container"
         "body-container"
-        "footer";
+        "foot";
 }
 
 
@@ -33,21 +33,78 @@
     /* text-align: center; */
 }
 
+/* .heading-1 {
+    grid-area: heading-1;
+    text-align: center;
+    
+} */
+
 .heading-1 {
     grid-area: heading-1;
     text-align: center;
+    background-color: #666666;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
 }
+
+.heading-1:hover {
+    background-color: #caebf2;
+
+}
+
+.heading-1:active {
+    position: relative;
+    top: 1px;
+}
+
+
 
 .heading-2 {
     grid-area: heading-2;
     text-align: center;
+    background-color: #666666;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+}
+
+.heading-2:hover {
+    background-color: #caebf2;
+
+}
+
+.heading-2:active {
+    position: relative;
+    top: 1px;
 
 }
 
 .heading-3 {
     grid-area: heading-3;
     text-align: center;
+    background-color: #666666;
+    border-radius: 3px;
+    border: 1px solid #666666;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding: 6px 24px;
+}
 
+.heading-3:hover {
+    background-color: #caebf2;
+}
+
+.heading-3:active {
+    position: relative;
+    top: 1px;
 }
 
 .hero-container {
@@ -118,11 +175,6 @@
 
 }
 
-
-div {
-    border: 1px solid red;
-}
-
 .sidebar-0 {
     grid-area: siber-0;
     font-size: 1.3em;
@@ -134,11 +186,11 @@ div {
     text-align: center;
 }
 
-footer {
-    font-size: 1.3em;
+.foot {
+    grid-area: foot;
+    font-size: 1em;
     font-weight: bold;
-    border: 1px dashed rgb(33, 55, 180);
-
+    text-align: center;
 }
 
 /* Phone screen */
@@ -190,7 +242,7 @@ footer {
             "heading-container heading-container"
             "hero-container hero-container"
             "body-container side-container"
-            "footer footer"
+            "foot foot"
     }
 
 }
