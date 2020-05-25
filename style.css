@@ -1,4 +1,7 @@
 .all-container {
+    font-family: 'Poppins', sans-serif;
+    color: #666666;
+    background-color: #EFEFEF;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -11,11 +14,10 @@
 
 
 .heading-container {
+    background-color: #caebf2;
     margin: 10px 0 10px 0;
     padding: 10px;
-    background-color: rosybrown;
     display: grid;
-    border: 1px dashed teal;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -48,6 +50,19 @@
 
 }
 
+.hero-container {
+    background-color: #caebf2;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "hero-0"
+        "hero-1"
+        "hero-2"
+}
+
 .hero-0 {
     font-size: 1.3em;
     font-weight: bold;
@@ -66,18 +81,18 @@
 
 }
 
-.hero-container {
+.body-container {
     margin: 10px 0 10px 0;
     padding: 10px;
-    background-color: bisque;
+    background-color: #caebf2;
     display: grid;
-    border: 1px dashed teal;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
     grid-template-areas:
-        "hero-0"
-        "hero-1"
-        "hero-2"
+        "body-0"
+        "body-1"
+        "body-ad"
+        "body-2"
 }
 
 .body-0 {
@@ -103,20 +118,6 @@
 
 }
 
-.body-container {
-    margin: 10px 0 10px 0;
-    padding: 10px;
-    background-color: paleturquoise;
-    display: grid;
-    border: 1px dashed teal;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 2fr;
-    grid-template-areas:
-        "body-0"
-        "body-1"
-        "body-ad"
-        "body-2"
-}
 
 div {
     border: 1px solid red;
@@ -136,7 +137,6 @@ div {
 footer {
     font-size: 1.3em;
     font-weight: bold;
-    border: 1px solid red;
 
 }
 
