@@ -118,6 +118,8 @@
 
 .hero-1 {
     grid-area: hero-1;
+    text-align: center;
+
 }
 
 .hero-2 {
