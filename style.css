@@ -137,12 +137,13 @@ div {
 footer {
     font-size: 1.3em;
     font-weight: bold;
+    border: 1px dashed rgb(33, 55, 180);
 
 }
 
 /* Phone screen */
 
-@media (max-width: 576px) {
+@media only screen and (max-width: 576px) {
 
     .hero-1 {
         display: none;
@@ -154,7 +155,7 @@ footer {
 }
 
 /* Tablet screen */
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
 
     .heading-container {
         grid-template-columns: 1fr 1fr 1fr;
@@ -175,7 +176,7 @@ footer {
 
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 
     .body-ad {
         display: none;
